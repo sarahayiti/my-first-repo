@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1 id="title"> Tech Survey form </h1>
+        <p id="description">We’d love to know more about your coding and tech preferences.</p>
+    </header>
+    <form id="survey-form">
+       <fieldset>
+        <legend>Personal Info</legend>
+         <label for="name" id="name-label"> Name: </label>
+         <input id="name" type="text" placeholder="Enter your name" required>
+
+         <label for="email" id="email-label"> Email: </label>
+         <input id="email" type="email" placeholder="name@email.com" required>
+
+         <label for="number" id="number-label"> Age:</label>
+         <input id="number" type="number" min="10" max="15" placeholder="Type your age">
+       
+      </fieldset>
+      <fieldset>
+        <legend> Daily Internet Usage </legend>
+        <label>
+            <input type="radio" name="daily-usage" value="1 hour">
+            1 Hour
+        </label>
+        <label>
+            <input type="radio" name="daily-usage" value="upto 6 hours">
+            Upto 6 hours
+        </label>
+        <label>
+            <input type="radio" name="daily-usage" value="more than 6 hours">
+            More than 6 hours
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Which social media apps do you use regularly?</legend>
+        <label>
+            <input type="checkbox" name="social-media[]" value="Reddit">
+            Reddit
+        </label>
+        <label>
+            <input type="checkbox" name="social-media[]" value="X">
+            X
+        </label>
+        <label>
+            <input type="checkbox" name="social-media[]" value="Whatsapp">
+            Whatsapp
+        </label>
+        <label>
+            <input type="checkbox" name="social-media[]" value="Threads">
+            Threads
+        </label>
+        <label>
+            <input type="checkbox" name="social-media[]" value="Instagram">
+            Instagram
+        </label>
+        <label>
+            <input type="checkbox" name="social-media[]" value="Snapchat">
+            Snapchat
+        </label>
+        <label>
+            <input type="checkbox" name="social-media[]" value="Youtube">
+            Youtube
+        </label>
+      </fieldset>
+      <fieldset>
+          <legend>How often do you upgrade your smartphone?</legend>
+          <label for="dropdown">Choose one:</label>
+          <select id="dropdown" name="dropdown" required>
+            <option value="">--Please choose an option--</option>
+            <option value="yearly">Every year</option>
+            <option value="two-years">Every 2 years</option>
+            <option value="three-plus">Every 3 years or more</option>
+            <option value="never">Only when it breaks</option>
+          </select>
+      </fieldset>
+
+      <fieldset>
+          <legend>Your Feedback</legend>
+          <label for="feedback">What’s one tech gadget you wish you had?</label><br>
+          <textarea id="feedback" name="feedback" rows="4" cols="40" placeholder="Type your answer here..." required></textarea>
+      </fieldset>
+
+      <button type="submit" id="submit"> Submit </button>
+
+    </form>
+</body>
+</html>
